@@ -1,4 +1,4 @@
-# audiosearch
+# Deep Learning Music
 Collect data, sources and papers to deep learn in music. 
 
 ## Important Links
