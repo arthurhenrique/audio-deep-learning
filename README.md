@@ -1,5 +1,5 @@
 # audiosearch
-Collect data, sources and papers to UFAM master degree
+Collect data, sources and papers to deep learn in music. 
 
 ## Important Links
 
