@@ -1,14 +1,17 @@
 ## Tema da pesquisa
-Detecção de Pneumonia em Áudios usando Estetoscópios Digitais
+Detecção de Pneumonia X em Áudios usando Estetoscópios Digitais
 
 ## Problema tratado
-Construir um modelo de classificação de pneumonia.
+Construir um modelo de classificação de pneumonia x.
 
 ## Hipótese
-Utilizar estescópio digitais para classificação de pneumonia.
+Utilizar estescópio digitais para classificação de pneumonia x.
 
 ## Objetivo de pesquisa
-Definir e implementar um modelo de classificação de pneumonia utilizando estescópios digitais e compreender métodos para classificação existentes.
+Definir e implementar um modelo de classificação de pneumonia x utilizando estescópios digitais e compreender métodos para classificação existentes.
+
+## Leituras
+https://spectrum.ieee.org/biomedical/devices/a-smart-stethoscope-puts-ai-in-medics-ears
 
 ## Referências
 Paper: Α Respiratory Sound Database for the Development of Automated Classification
