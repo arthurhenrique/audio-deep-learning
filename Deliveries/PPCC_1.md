@@ -2,13 +2,13 @@
 Detecção de Pneumonia em Áudios usando Estetoscópios Digitais
 
 ## Problema tratado
-Construir um modelo de classificação de doenças respiratórias.
+Construir um modelo de classificação de pneumonia.
 
 ## Hipótese
-Utilizar estescópio digitais para classificação de doenças respiratórias como pneumonia.
+Utilizar estescópio digitais para classificação de pneumonia.
 
 ## Objetivo de pesquisa
-Definir e implementar um modelo de classificação para doenças respiratórias como a pneumonia utilizando estescópios digitais e compreender métodos para classificação existentes.
+Definir e implementar um modelo de classificação de pneumonia utilizando estescópios digitais e compreender métodos para classificação existentes.
 
 ## Referências
 Paper: Α Respiratory Sound Database for the Development of Automated Classification
@@ -35,4 +35,4 @@ https://github.com/Hahnnz/Pulmonary_Nodule_Detection_Classification
 
 ## String Busca
 
-Lung, Respiratory, Disease, Deep, learning, Pneumonia
+Lung, Respiratory Disease, Deep learning, Pneumonia
