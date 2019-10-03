@@ -1,5 +1,10 @@
+
 \documentclass[12pt]{article}
 
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+
+ 
 \usepackage{amsmath}    % need for subequations
 \usepackage{graphicx}   % need for figures
 \usepackage{verbatim}   % useful for program listings
@@ -19,22 +24,17 @@
 \setlength{\marginparpush}{1.0cm}
 \setlength{\textwidth}{150mm}
 
-\begin{comment}
-\pagestyle{empty} % use if page numbers not wanted
-\end{comment}
 
 % above is the preamble
 
 \begin{document}
-
 \begin{center}
 {\large \textit{Deep Learning} na Detecção de Pneumonia A partir de Áudios Extraídos de Estetoscópios Digitais} \\  % \\ = new line
 \ \\
-
 Arthur Henrique da Silva \\
-
-
 \end{center}
+
+\begin{multicols}{2}
 
 \section{Problema Tratado}
 Construção de um classificador de pneumonia de tipo viral ou bacteriana através de áudios extraídos de estetoscópios digitais com abordagem 
@@ -42,20 +42,28 @@ Construção de um classificador de pneumonia de tipo viral ou bacteriana atrav�
 
 \section{Hipótese}
 Detectar pneumonia bacteriana ou viral a partir de áudios respiratórios extraídos de estetoscópios digitais.
-
+\ \\
 \section{Objetivo de Pesquisa}
 
 Definir e implementar um modelo de classificação de pneumonia bacteriana ou viral utilizando estetoscópios digitais baseado em áudios e coletar métodos para classificação existentes para detecção da doença a partir de abordagem \textit{deep learning}.
 
 \section{Periódicos (Journals e Magazines)}
-\url{https://signalprocessingsociety.org/publications-resources/ieee-journal-selected-topics-signal-processing}
-\url{https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=79}
+\begin{itemize}
+    \item \link{https://signalprocessingsociety.org/publications-resources
+    /ieee-journal-selected-topics-signal-processing}
+    \item \link{https://ieeexplore.ieee.org/xpl/
+    RecentIssue.jsp?punumber=79}
 
+\end{itemize}
 
 \section{Conferências e Simpósios}
+\begin{itemize}
+    \item \link{https://www.myhuiban.com/conference
+    /2854?lang=es}
+    \item \link{https://ieeexplore.ieee.org/xpl/
+    conhome/6937054/proceeding}
+\end{itemize}
 
-\url{https://www.myhuiban.com/conference/2854?lang=es}{https://www.myhuiban.com/conference/2854?lang=es}
-\url{https://ieeexplore.ieee.org/xpl/conhome/6937054/proceeding}
-
+\end{multicols}
 
 \end{document}
