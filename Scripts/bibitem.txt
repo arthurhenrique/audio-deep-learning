@@ -1,0 +1,19 @@
+\bibitem{article}
+Leng, S., Tan, R., Chai, K., Wang, C., Ghista, D. & Zhong, L. The electronic stethoscope.  {\em Biomedical Engineering Online}. \textbf{14} pp. 66 (2015)
+
+\bibitem{toews1986southwestern}
+Toews, G. Southwestern internal medicine conference: nosocomial pneumonia.  {\em The American Journal Of The Medical Sciences}. \textbf{291}, 355--367 (1986)
+
+\bibitem{10.1086/591392}
+Nolte, F. Molecular Diagnostics for Detection of Bacterial and Viral Pathogens in Community-Acquired Pneumonia}.  {\em Clinical Infectious Diseases}. \textbf{47}, S123-S126 (2008)
+
+\bibitem{FIGUEIREDO2009}
+Figueiredo, L. Pneumonias virais: aspectos epidemiol\~A\textthreesuperiorgicos, cl\~A\-nicos, fisiopatol\~A\textthreesuperiorgicos e tratamento}.  {\em Jornal Brasileiro De Pneumologia}}. \textbf{35} pp. 899 - 906 (2009)
+
+\bibitem{article}
+Bohadana, A., Izbicki, G. & Kraman, S. Fundamentals of Lung Auscultation.  {\em The New England Journal Of Medicine}. \textbf{370} pp. 744-751 (2014)
+
+\bibitem{10.1007/978-981-10-7419-6_6}
+Author="rocha, B. title="$\Alpha$ Respiratory Sound Database for the Development of Automated Classification.  (publisher="Springer Singapore,year="2018)
+
+

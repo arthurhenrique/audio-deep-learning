@@ -1,69 +1,130 @@
-\documentclass[12pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%2345678901234567890123456789012345678901234567890123456789012345678901234567890
+%        1         2         3         4         5         6         7         8
 
-\setlength{\columnsep}{1cm}
+\documentclass[letterpaper, 10 pt, conference]{ieeeconf}  % Comment this line out
+                                                          % if you need a4paper
+%\documentclass[a4paper, 10pt, conference]{ieeeconf}      % Use this line for a4
+                                                          % paper
 
-\usepackage{multicol}
-\usepackage{amsmath}    % need for subequations
-\usepackage{graphicx}   % need for figures
-\usepackage{verbatim}   % useful for program listings
-\usepackage{color}      % use if color is used in text
+\IEEEoverridecommandlockouts                              % This command is only
+                                                          % needed if you want to
+                                                          % use the \thanks command
+\overrideIEEEmargins
+% See the \addtolength command later in the file to balance the column lengths
+% on the last page of the document
 
-\usepackage{hyperref}   % use for hypertext links, including those to external documents and URLs
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+% The following packages can be found on http:\\www.ctan.org
+%\usepackage{graphics} % for pdf, bitmapped graphics files
+%\usepackage{epsfig} % for postscript graphics files
+%\usepackage{mathptmx} % assumes new font selection scheme installed
+%\usepackage{mathptmx} % assumes new font selection scheme installed
+%\usepackage{amsmath} % assumes amsmath package installed
+%\usepackage{amssymb}  % assumes amsmath package installed
 
-% don't need the following. simply use defaults
-\setlength{\baselineskip}{16.0pt}    % 16 pt usual spacing between lines
-
-\setlength{\parskip}{3pt plus 2pt}
-\setlength{\parindent}{20pt}
-\setlength{\oddsidemargin}{0.5cm}
-\setlength{\evensidemargin}{0.5cm}
-\setlength{\marginparsep}{0.75cm}
-\setlength{\marginparwidth}{2.5cm}
-\setlength{\marginparpush}{1.0cm}
-\setlength{\textwidth}{150mm}
+\title{\LARGE \bf
+\textit{Deep Learning} na Detecção de Pneumonia A partir de Áudios Extraídos de Estetoscópios Digitais
+}
 
 
-% above is the preamble
+\author{Arthur Henrique da Silva}
 
 \begin{document}
-\begin{center}
-{\large \textit{Deep Learning} na Detecção de Pneumonia A partir de Áudios Extraídos de Estetoscópios Digitais} \\  % \\ = new line
-\ \\
-Arthur Henrique da Silva \\
-\end{center}
+\bibliography{refs.bib}
 
-\begin{multicols}{2}
 
-\section{Problema Tratado}
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introdução}
+
+A pneumonia é um acometimento no parênquima pulmonar causada por grande variedade de agentes, incluindo bactérias, micoplasma, fungos, parasitas e
+vírus, sendo a pneumonia bacteriana a causa mais comum da doença, e o assunto abordado para o reconhecimento desta patologia é a ausculta pulmonar, que é um método semiológico básico no exame dos pulmões, onde é possível reconhecer padrões baseado em regiões e sons pulmonares através de equipamentos médicos, o estetoscópio digital, que além de permitir um exame detalhado, registra os dados em sinais de áudios. E, com a abordagem deep learning é possível analisar com precisão e correlacionar doenças e padrões da mecânica dos pulmões, tornando o diagnóstico assertivo através de um classificador para o método de ausculta pulmonar.
+
+
+\section{Definição do Problema}
+
 Construção de um classificador de pneumonia de tipo viral ou bacteriana através de áudios extraídos de estetoscópios digitais com abordagem 
-\textit{deep learning} para detecção da doença. Estes áudios respiratórios extraídos são organizados pelo número do paciente, idade, sexo, massa corpórea, peso e altura; e coletados a partir da região da traqueia, peito anterior esquerdo, peito anterior direito, peito posterior esquerdo, peito anterior direito, peito lateral esquerdo e peito lateral direito, no ciclo de respiração completo, e considerando crepitações e chiados, caso haja.
+\textit{deep learning} para detecção da doença. Estes áudios respiratórios extraídos são organizados pelo número do paciente, idade, sexo, massa corpórea, peso e altura; e coletados a partir da região da traqueia, peito anterior esquerdo, peito anterior direito, peito posterior esquerdo, peito anterior direito, peito lateral esquerdo e peito lateral direito, no ciclo de respiração completo, e considerando sons anormais na ausculta pulmonar e.g: (roncos, sibilos, estridores, grasnidos), caso haja.
+
+Onde os métodos de extração de dados através de Mel-Frequency Cepstral Coefficients (MFCC) e short-time Fourier transform (STFT) e, comparados a partir de espectogramas.
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=4cm]{spectogram.png}
+    \caption{Espectograma de áudio de Indivíduo com pneumonia}
+    \label{fig:galaxy}
+\end{figure}
 
 \section{Hipótese}
-Detectar pneumonia bacteriana ou viral a partir de áudios respiratórios extraídos de estetoscópios digitais.
-\ \\
+
+A partir do método semiológico de ausculta pulmonar, classificar tipos de pneumonias através de áudios respiratórios extraídos de estetoscópios digitais.
+
+
 \section{Objetivo de Pesquisa}
 
 Definir e implementar um modelo de classificação de pneumonia bacteriana ou viral utilizando estetoscópios digitais baseado em áudios e coletar métodos para classificação existentes para detecção da doença a partir de abordagem \textit{deep learning}.
 
-\section{Periódicos (Journals e Magazines)}
+\begin{itemize}
+\item Coletar métodos de ausculta pulmonar com abordagem deep learning.
 
-https://signalprocessingsociety.org/publications-resources
-/ieee-journal-selected-topics-signal-processing
+\item Definir o modelo classificatório para análise de padrões e sinais da doença.
+
+\item Análisar os métodos e atualização dos modelos.
+
+\end{itemize}
 \ \\
-https://ieeexplore.ieee.org/xpl/
-RecentIssue.jsp?punumber=79
 
+\section{Periódicos (Journals e Magazines)}
+\begin{itemize}
+\item EURASIP Journal on Image and Video Processing
+\item JOURNAL OF RESPIRATORY AND CRITICAL CARE MEDICINE
+\item IEEE Transactions on Audio Speech and Language Processing
+\item IEEE Transactions on Biomedical Engineering
+\ \\
 
-
+\end{itemize}
 \section{Conferências e Simpósios}
 
-https://www.myhuiban.com/conference
-/2854?lang=es
-\ \\
-https://ieeexplore.ieee.org/xpl/
-conhome/6937054/proceeding
+\begin{itemize}
+\item Proceedings of the International Symposium on Auditory and Audiological Research
+\item Signal Processing Conference (EUSIPCO), European
+\end{itemize}
 
 
-\end{multicols}
+\begin{thebibliography}{99}
+
+\bibitem{c1}
+Leng, S., Tan, R., Chai, K., Wang, C., Ghista, D. Zhong, L. The electronic stethoscope.  Biomedical Engineering Online.  (2015)
+
+\bibitem{c2}
+Toews, G. Southwestern internal medicine conference: nosocomial pneumonia.  The American Journal Of The Medical Sciences.  (1986)
+
+\bibitem{c3}
+Nolte, F. Molecular Diagnostics for Detection of Bacterial and Viral Pathogens in Community-Acquired Pneumonia. Clinical Infectious Diseases.  (2008)
+
+\bibitem{c4}
+Figueiredo, L. Pneumonias virais: aspectos epidemiológicos, clinícos, fisiopatológicos e tratamento. Jornal Brasileiro De Pneumologia. (2009)
+
+\bibitem{c5}
+Bohadana, A., Izbicki, G. and Kraman, S. Fundamentals of Lung Auscultation. The New England Journal Of Medicine. (2014)
+
+\bibitem{c6}
+Rocha, B Respiratory Sound Database for the Development of Automated Classification.  (2018)
+
+\bibitem{c7}
+Kilic, Ozkan and Kılıç, Özkan and Kurt, Bahar and Saryal, Sevgin. 
+Classification of lung sounds using convolutional neural networks (2017)
+
+\end{thebibliography}
+
+
+
 
 \end{document}
